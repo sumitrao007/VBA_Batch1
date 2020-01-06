@@ -1,0 +1,40 @@
+<p>
+  eventbinding2 works!
+</p>
+<input type="text" placeholder="Enter the Name" (change)="OnChange()"> <br><br>
+
+<input type="text" placeholder="Enter the Name..." (keyup)="onKeyUP()"> <br><br>
+
+<input type="text" (keydown)="onKeyDown()"> <br><br>
+
+<button (click)="onClick($event)" value="U Click Event">Click Me</button>
+
+<!-- template reference variable -->
+<br><br>
+
+<input  type="text" placeholder="Enter the Name..." #myinput ><br>
+<button (click)="OnTemplateclick(myinput.value)">Click Me</button>
+<br><br>
+
+<input #myinput1 type="text" placeholder="Enter the Name..."><br>
+<button (click)="OnTemplateclick2(myinput1)">Click ME</button>
+
+<hr>
+<button (click)="OnRed()">Red</button >
+<button (click)="OnGreen()">Green</button>
+<button (click)="OnBlue()">Blue</button> <br><br>
+
+<div [style.background]="mycolor">
+  
+</div>
+
+<hr>
+<button (click)="Oncolor('red')">Red</button >
+<button (click)="Oncolor('green')">Green</button>
+<button (click)="Oncolor('blue')">Blue</button> <br><br>
+
+<div [style.background]="mycolor1">
+  
+</div>
+
+
