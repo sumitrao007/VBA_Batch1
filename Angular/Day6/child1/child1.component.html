@@ -1,0 +1,26 @@
+<p>
+ -------------- child1 Component-----------------------
+</p>
+
+{{ParentTochild}}
+<hr>
+{{parentobj.fname}} <br>
+{{parentobj.lname}}<br>
+{{parentobj.id}}<br>
+<hr>
+<table>
+  <thead>
+    <th>#</th>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of parentarrobj;index as i">
+      <td> {{i+1}} </td>
+      <td> {{item.id}} </td>
+      <td> {{item.fname}} </td>
+      <td>  {{item.lname}} </td>
+    </tr>
+  </tbody>
+</table>
