@@ -1,0 +1,28 @@
+<p>
+  ifdirective works!
+</p>
+
+<div *ngIf="rating<4">U r Condition is true
+
+</div>
+<br>
+<div *ngIf="rating1<4;else elsepart">U r Condition1 is true
+
+</div>
+<!-- <div #elsepart>
+    u r in else part
+</div> -->
+
+<ng-template #elsepart>
+  u r in else part
+  <h1>Hi u r in else part</h1>
+</ng-template> <br><br>
+
+<div *ngIf="rating2<4;then mainpart else elsepart1"></div>
+
+<ng-template #mainpart>
+  <h2>U r In Main Part</h2>
+</ng-template>
+<ng-template #elsepart1>
+<h2>U r in Else Part1</h2>
+</ng-template>
