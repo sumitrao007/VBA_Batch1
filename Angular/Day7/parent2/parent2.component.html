@@ -1,0 +1,34 @@
+<p>
+  parent2 works!
+</p>
+
+<h2> {{childtoparentmsg}}</h2>
+
+<h2> {{childtoparentobj.fname}} </h2>
+<h2> {{childtoparentobj.lname}} </h2>
+<h2> {{childtoparentobj.cellno}} </h2>
+
+<table>
+  <thead>
+    <th>First name</th>
+    <th>Last Name</th>
+    <th>Cell No</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of childtoparentArrobj">
+
+      <td> {{item.fname}} </td>
+      <td> {{item.lname}} </td>
+      <td> {{item.cellno}} </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <app-child2 [parenttochild]="msg" ></app-child2> -->
+
+<!-- <app-child2 [parentobj]="myobj" ></app-child2> -->
+<!-- <app-child2 [parentarrobj]="myarrobj"  ></app-child2> -->
+
+<!-- <app-child2 (childtoparent)="childtoparentmsg=$event" ></app-child2> -->
+<!-- <app-child2 (childtoparentobj)="childtoparentobj=$event" ></app-child2> -->
+<app-child2 (childtoparentArrObj)="childtoparentArrobj=$event" ></app-child2>

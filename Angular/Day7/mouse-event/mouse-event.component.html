@@ -1,0 +1,19 @@
+<p>
+  mouse-event works!
+</p>
+<table border="2px">
+  <thead>
+    <th>#</th>
+    <th>Product name</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of productarr;index as i" (mouseover)="onMouseHover(item)" [ngClass]="{'highlight':selected==item.prodname}" (mouseout)="OnMouseout()">
+        <td> {{i+1}} </td>
+        <td> {{item.prodname}} </td>
+        <td> {{item.quantity}} </td>
+        <td> {{item.price}} </td>
+    </tr>
+  </tbody>
+</table>

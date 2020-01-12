@@ -1,0 +1,30 @@
+<p>
+  child2 works!
+</p>
+
+<h2> {{parenttochild}} </h2>
+<hr>
+<h2> {{parentobj.fname}} </h2>
+<h2> {{parentobj.lname}} </h2>
+<h2> {{parentobj.id}} </h2><br><br>
+
+<table>
+  <thead>
+    <th>First name</th>
+    <th>Last Name</th>
+    <th>ID</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of parentarrobj">
+      <td> {{item.fname}} </td>
+      <td> {{item.lname}} </td>
+      <td> {{item.id}} </td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="onSendData()">Send Data</button> <br><br>
+
+<button (click)="OnSendOBJ()">Send OBJECT</button> <br><br>
+
+<button (click)="OnSendArrObj()"> Send Array of OBJECT </button>
