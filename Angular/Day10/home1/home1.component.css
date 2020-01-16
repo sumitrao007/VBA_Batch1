@@ -1,0 +1,14 @@
+.sidebarclass{
+    background-color: coral;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+
+.songlistclass{
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+}
