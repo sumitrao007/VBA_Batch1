@@ -1,0 +1,14 @@
+<p>
+  home works!
+</p>
+
+<a [routerLink]="['/page1',myid]">Page1</a>
+<a [routerLink]="['/page2',myid,myusername]">Page2</a>
+<a routerLink="/follower">Follower</a>
+<a routerLink="/Queryparameter" [queryParams]="product">QueryParameter</a>
+<hr>
+<button (click)="onPage1()">Page1</button>
+<button (click)="onPage2()">Page2</button>
+<button (click)="onFollower()">Follower</button>
+<button (click)="onQueryparam()">QueryParameter</button>
+
